@@ -25,13 +25,14 @@ let body=document.querySelector("body");
            
        })
  
-       for(let i=1;i<=9;i++){
+       
 		   form=document.querySelector("form");
 		   form.addEventListener("reset",(e)=>{
            e.preventDefault();
-           
+           for(let i=1;i<=9;i++){
       let box = document.getElementById(i);
            box.style.backgroundColor="transparent";
            
-	   });
+	   }
+		   });
        })

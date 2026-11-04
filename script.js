@@ -32,6 +32,6 @@ let body=document.querySelector("body");
            
       let box = document.getElementById(i);
            box.style.backgroundColor="transparent";
-           console.log(boxid,boxcol)
+           
 	   });
        })

@@ -24,11 +24,13 @@ let body=document.querySelector("body");
            box.style.backgroundColor=boxcol;
            
        })
-       form.addEventListener("reset",(e)=>{
+       for(let i=1;i<=9;i++){
+		   form=document.querySelector("form");
+		   form.addEventListener("reset",(e)=>{
            e.preventDefault();
-           let boxid=form.elements[0].value;
            
-        let box = document.getElementById(boxid);
-           box.style.backgroundColor="transparent";
+      
+           box[i].style.backgroundColor="transparent";
            console.log(boxid,boxcol)
+	   }
        })
